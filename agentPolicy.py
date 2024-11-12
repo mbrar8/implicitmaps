@@ -1,11 +1,11 @@
 from sb3_contrib.common.recurrent.policies import RecurrentMultiInputActorCriticPolicy
-
+import torch
 
 class AgentLSTMPolicy(RecurrentMultiInputActorCriticPolicy):
 
     def __init__(self, *args, sensor_set, **kwargs):
 
-        super(AgentProbePolicy, self).__init__(*args, **kwargs)
+        super().__init__(*args, **kwargs)
         self.sensor_set = sensor_set
 
 
